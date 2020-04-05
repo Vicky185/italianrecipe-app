@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block content %}
+
+<h4> Search results for: <em> {{query}} </em></h4>
+
+<!-- Cards for results of recipes search -->
+<div class="row">
+    {% for recipe in results %}
+    <div class="col-lg-3 col-md-6 col-sm-4">
+        <div class="card" style="width: 25em;">
+            <div class="card-image-top">
+                <img src="{{recipe.image}}" alt="recipeimg">
+            </div>
+            <div class="card-body">
+                <span class="card-title">{{recipe.title}}</span>
+                <p class="card-text">{{recipe.description}}</p>
+                <p><a href="{{url_for('one_recipe', recipe_id=recipe._id)}}" class="btn btn-primary">Click here for more...</a></p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}
