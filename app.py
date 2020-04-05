@@ -35,7 +35,19 @@ def one_recipe(recipe_id):
     recipe_db = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
     return render_template('one_recipe.html', recipe=recipe_db)
    
-
+# Search Recipes
+@app.route('/search')
+def search():
+    user_query = request.args['query']
+    query = {'$regex': re.compile('.*{}.*'.format(user_query))}
+    results = mongo.db.recipes.find({
+        '$or': [
+            {'title': query},
+            {'tags': query},
+            {'ingredients': query}
+        ]
+    })
+    return render_template('search.html', query=user_query, results=results)
 
 
 
