@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, request, url_for
 import os
 from flask_pymongo import PyMongo
+from forms import CreateRecipeForm, EditRecipeForm, ConfirmDelete
 from bson.objectid import ObjectId
 import math
 import re
@@ -49,7 +50,58 @@ def search():
     })
     return render_template('search.html', query=user_query, results=results)
 
+# Create, add and insert the information for the new recipe
+@app.route('/create_recipe', methods=['POST', 'GET'])
+def create_recipe():
+    #connects the correct form from forms.py
+    form = CreateRecipeForm(request.form)
+    if form.validate_on_submit():
+        #sets the collection that its being added to
+        recipes_db = mongo.db.recipes
+        #adds the new recipe
+        recipes_db.insert_one({
+            'title': request.form['title'],
+            'description': request.form['description'],
+            'ingredients': request.form['ingredients'],
+            'method': request.form['method'],
+            'tags': request.form['tags'],
+            'image': request.form['image'],
+            'views': 0
+        })
+        return redirect(url_for('index', title='New Recipe Added'))
+    return render_template('create_recipe.html', title='create a recipe', form=form)
+ 
 
+# Edit a previously uploaded recipe 
+@app.route('/edit_recipe/<recipe_id>', methods=['POST', 'GET'])
+def edit_recipe(recipe_id):
+    recipe_db = mongo.db.recipes.find_one_and_update({'_id': ObjectId(recipe_id)})
+    if request.method == 'GET':
+        form = EditRecipeForm(data=recipe_db)
+        return render_template('edit_recipe.html', recipe=recipe_db, form=form)
+    form = EditRecipeForm(request.form)
+    if form.validate_on_submit():
+        recipes_db = mongo.db.recipes
+        recipes_db.update_one({
+            '_id': ObjectId(recipe_id),
+        }, {
+            '$set': {
+                'title': request.form['title'],
+                'description': request.form['description'],
+                'ingredients': request.form['ingredients'],
+                'method': request.form['method'],
+                'tags': request.form['tags'],
+                'image': request.form['image'],
+            }
+        })
+        return redirect(url_for('index', title='New Recipe Added'))
+    return render_template('edit_recipe.html', recipe=recipe_db, form=form)
+
+# Delete Recipe
+@app.route('/delete_recipe/<recipe_id>')
+def delete_recipe(_id):
+    mongo.db.recipes.remove({'_id': ObjectId(_id)})
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
