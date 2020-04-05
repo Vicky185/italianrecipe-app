@@ -1,17 +1,77 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Document</title>
- </head>
- <body>
+<!DOCTYPE html>
+<html lang="en">
 
- <h1>Outside!</h1>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
 
-{% block content %}
-{% endblock %}
-     
- </body>
- </html>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Sacramento|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+		rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand logo-style" href="{{url_for('index')}}">Italian Gluttony</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">Home</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{url_for('get_all_recipes')}}">Recipes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{url_for('add_recipe')}}">Create</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container container-main-body">
+		{% block content %} {% endblock %}
+	</div>
+
+</body>
+
+<footer class="container-fluid footer-text">
+	<div class="row text-center"> Forever Italian...</div>
+	<div class="row text-center"> Copyright &copy; Italian Gluttony </div>
+
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+
+<script type="text/javascript">
+	// When the user clicks on <div> in one_recipe, open the popup
+    function myPopupFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+    myPopupFunction();
+
+    // With jQuery
+    $(document).ready(function() {
+        //for the navbar
+        $('.sidenav').sidenav();
+        // for the delete and edit are you sure modals
+        //  $('.modal').modal();
+    });
+</script>
+
+</html>
