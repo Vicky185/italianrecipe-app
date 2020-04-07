@@ -69,7 +69,7 @@ h5 {
 
 /* --------------------------------------------------------------- imagery on home page*/
 
-.br-image-italia1 {
+.img-header {
   height: 50vh;
   width: 100%;
     background: url('../images/italia1.jpeg') no-repeat bottom right fixed;
@@ -133,27 +133,20 @@ footer {
     color: #fafafa;
     min-height: 100px;
     text-align: center;
+    margin-top: 50px;
+    padding: 15px;
 }
 
-.footer-styling-brand{
+.footer-text {
     font-family: "Sacramento", sans-serif;
     font-size: 2em;
-    text-align: center;
+    margin: 20px;
 }
 
-.foot-styles {
-    font-family: 'Playfair+Display: 700', sans-serif;
-    font-size: 1em;
-    text-align: center;
-}
-
-
-/* popup styling*/ 
-/* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+.copyright-text {
+    font-family: 'Playfair+Display: 500i', sans-serif;
+    font-size: 8px;
+    margin: 20px;
 }
 
 
