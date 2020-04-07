@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request, url_for
 import os
 from flask_pymongo import PyMongo
 from forms import CreateRecipeForm, EditRecipeForm, ConfirmDelete
+from config import Config
 from bson.objectid import ObjectId
 import math
 import re
@@ -10,6 +11,7 @@ app=Flask(__name__)
 
 app.config["MONGO_DBNAME"] = 'recipes_manager'
 app.config["MONGO_URI"] = 'mongodb+srv://vic_user_26:v!cky!99!&!989@myfirstcluster-ziitx.mongodb.net/recipes_manager?retryWrites=true&w=majority'
+app.config.from_object(Config)
 
 mongo = PyMongo(app)
 
@@ -99,9 +101,17 @@ def edit_recipe(recipe_id):
 
 # Delete Recipe
 @app.route('/delete_recipe/<recipe_id>')
-def delete_recipe(_id):
-    mongo.db.recipes.remove({'_id': ObjectId(_id)})
-    return redirect(url_for('index'))
+def delete_recipe(recipe_id):
+    recipe_db = mongo.db.recipes.find_one_and_delete({'_id': ObjectId(recipe_id)})
+    form = ConfirmDelete(data=recipe_db)
+    if form.validate_on_submit():
+        recipes_db = mongo.db.recipes_db
+        recipes_db.delete_one({
+            '_id': ObjectId(recipe_id)
+        })
+        return redirect(url_for('index', title='Updated List of Recipes'))
+    return render_template('delete_recipe.html', title="delete recipe", recipe=recipe_db, form=form)
+
 
 
 if __name__ == '__main__':

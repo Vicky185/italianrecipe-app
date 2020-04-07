@@ -4,6 +4,7 @@
 
 
 <form action="{{url_for('create_recipe')}}" method="POST" class="col-12">
+        {{ form.csrf_token }}
         <p>
             {{ form.title.label }}<br>
             {{ form.title(size=80) }}<br>
