@@ -70,7 +70,7 @@ h5 {
 /* --------------------------------------------------------------- imagery on home page*/
 
 .img-header {
-  height: 50vh;
+  height: 25%;
   width: 100%;
     background: url('../images/italia1.jpeg') no-repeat bottom right fixed;
   -webkit-background-size: cover;
@@ -92,6 +92,11 @@ h5 {
 
 
 /* --------------------------------------------------------------- card styling */
+
+.card-spacing-styles {
+    margin: 15px 20px;
+    padding: 5px;
+}
 
 .card-styling {
     display: inline-block;
