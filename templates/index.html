@@ -2,17 +2,11 @@
 
 {% block content %}
 
-<div class="row">
-    <div class="col-12">
-        <img clas="img-header" src="static/images/italia1.jpeg" alt="italianimg"></img>
-    </div>
-</div>
-
 <div class="row search-row">
     <div class="col-12">
         <form class="form-inline d-flex justify-content-center md-form form-sm mt-0" action="{{url_for('search')}}">
             <i class="material-icons">search</i>
-            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Enter keywords for your search of delicious Italian recipes!" name="query" />
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Enter keywords to search  delicious Italian recipes!" name="query" />
             <div>
                 <button class="btn btn-light" type="submit" name="action">Search</button>
             </div>
@@ -20,6 +14,15 @@
     </div>
 </div>
 
+<div class="container-fluid callout-container">
+        <!-- Callout -->
+        <div class="opaque-overlay">&nbsp;</div>
+        <div class="col-12">
+            <section class="callout jumbotron text-center">
+                <h2> Recipes for you, your family, for home and away. Always be Italian! </h2>
+            </section>
+        </div>
+    </div>
 
 <!-- Cards for home page recipe snippets -->
 <div class="container-fluid">
