@@ -69,27 +69,6 @@ h5 {
 
 /* --------------------------------------------------------------- imagery on home page*/
 
-.img-header {
-  height: 25%;
-  width: 100%;
-    background: url('../images/italia1.jpeg') no-repeat bottom right fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  align-items: center;
-  justify-content: center;
-
-  position: relative;
-}
-
-
-.container-main-body{
-    margin: 10px 50px;
-}
-
-
 .callout-container {
   height: 50vh;
 
@@ -205,6 +184,15 @@ footer {
 
 /* --------------------------------------------------------------- alternative view for media */
 
-@media(min-width:768px) {
-    
+@media (max-width: 480px){
+  
+  .custom-brand{
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
