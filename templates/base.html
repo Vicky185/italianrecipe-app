@@ -29,13 +29,13 @@
 		<a class="navbar col-md-4 col-sm-6 logo-style" href="{{url_for('index')}}">Italian Gluttony</a>
 
 		<!-- Collapse button -->
-		<button class="navbar-toggler toggler-nav" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"><span class="btn btn-light"><i class="fas fa-bars fa-1x"></i></span></button>
+		<button class="navbar-toggler toggler-nav" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"><span class="btn btn-light"><i class="fas fa-bars fa-1x" onclick="myFunction()"></i></span></button>
 
 		<!-- Collapsible content -->
 		<div class="collapse navbar-collapse" id="navbar-header">
 
 			<!-- Links -->
-			<ul class="navbar-nav mr-auto">
+			<ul class="navbar-nav mr-auto" id="nav-links">
 				<li class="nav-item active ui-nav-color">
 					<a class="nav-link nav-color" href="{{url_for('index')}}">Home
 						<span class="sr-only">Home menu</span></a>
@@ -73,12 +73,21 @@
 
 </footer>
 
- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
 
-    <script>
+<script>
+	function myFunction() {
+    var navig = document.getElementById("nav-links");
+    if (navig.style.display === "block") {
+    navig.style.display = "none";
+     } else {
+    navig.style.display = "block";
+    }
+}
+        
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() { scrollFunction() };
 
@@ -96,7 +105,7 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-    </script>
+</script>
 
 
 </html>
