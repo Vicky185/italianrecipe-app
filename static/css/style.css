@@ -10,32 +10,21 @@ beige - #e8e1ce
 
 /*--------------------------------------------------------------- General Styles */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    margin: 3px;
-    padding: 5px;
-    font-family: 'Playfair+Display: 700', sans-serif;
-
-}
-
 .general-text {
     font-family: 'Playfair+Display: 400', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .italicised-general-text{
     font-family: 'Playfair+Display: 400i', sans-serif;
-    font-size: 11px;
+    font-size: 16px;
 }
 
 /* ---------------------------------------------------------------Headers/navbar */
 
 .nav-item {
     font-family: "Playfair", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     padding-top: 10px;
     padding-right: 10px;
@@ -142,7 +131,7 @@ h5 {
 .jumbo-heading {
   color: #801e01;
   font-family: 'Sacramento', sans-serif;
-  font-size: 4em;
+  font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 30px;
 }
