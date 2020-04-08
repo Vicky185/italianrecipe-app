@@ -14,45 +14,50 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Sacramento|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
 
 </head>
 
 <body>
 
 	<!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-custom">
+	<nav class="navbar navbar-expand-md navbar-custom">
 
-            <!-- Navbar brand -->
-            <a class="navbar col-md-4 col-sm-6 logo-style" href="{{url_for('index')}}">Italian Gluttony</a>
+		<!-- Navbar brand -->
+		<a class="navbar col-md-4 col-sm-6 logo-style" href="{{url_for('index')}}">Italian Gluttony</a>
 
-            <!-- Collapse button -->
-            <button class="navbar-toggler toggler-nav" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"><span class="btn btn-light"></span></button>
+		<!-- Collapse button -->
+		<button class="navbar-toggler toggler-nav" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"><span class="btn btn-light"><i class="fas fa-bars fa-1x"></i></span></button>
 
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="navbar-header">
+		<!-- Collapsible content -->
+		<div class="collapse navbar-collapse" id="navbar-header">
 
-                <!-- Links -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active ui-nav-color">
-                        <a class="nav-link nav-color" href="{{url_for('index')}}">Home <span class="sr-only">Home menu</span></a>
-                    </li>
-                    <li class="nav-item ui-nav-color">
-                        <a class="nav-link nav-color" href="{{url_for('get_all_recipes')}}">Recipes</a>
-                    </li>
-                    <li class="nav-item ui-nav-color">
-                        <a class="nav-link nav-color" href="{{url_for('create_recipe')}}">Create</a>
-                    </li>
-                    <li class="nav-item ui-nav-color-contact">
-                        <i class="fa fa-comment" aria-hidden="true"></i><a class="nav-link nav-color-contact" href="#contactsection">Contact</a>
-                    </li>
-                </ul>
-                <!-- Links -->
+			<!-- Links -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active ui-nav-color">
+					<a class="nav-link nav-color" href="{{url_for('index')}}">Home
+						<span class="sr-only">Home menu</span></a>
+				</li>
+				<li class="nav-item ui-nav-color">
+					<a class="nav-link nav-color" href="{{url_for('get_all_recipes')}}">Recipes</a>
+				</li>
+				<li class="nav-item ui-nav-color">
+					<a class="nav-link nav-color" href="{{url_for('create_recipe')}}">Create</a>
+				</li>
+				<li class="nav-item ui-nav-color-contact">
+					<i class="fa fa-comment" aria-hidden="true"></i><a class="nav-link nav-color-contact"
+						href="#contactsection">Contact</a>
+				</li>
+			</ul>
+			<!-- Links -->
 
-            </div>
-            <!-- Collapsible content -->
+		</div>
+		<!-- Collapsible content -->
 
-        </nav>
-        <!--/.Navbar-->
+	</nav>
+	<!--/.Navbar-->
 
 
 
@@ -64,11 +69,11 @@
 
 <footer class="container-fluid footer-text">
 	<div class="col-12">
-    <div class="text-center"> Forever Italian...</div>
-    </div>
+		<div class="text-center"> Forever Italian...</div>
+	</div>
 	<div class="col-12">
-    <div class="copyright-text text-center"> Copyright &copy; Italian Gluttony </div>
-    </div>
+		<div class="copyright-text text-center"> Copyright &copy; Italian Gluttony </div>
+	</div>
 
 </footer>
 
