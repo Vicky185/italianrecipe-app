@@ -33,6 +33,16 @@ h5 {
 
 /* ---------------------------------------------------------------Headers/navbar */
 
+.nav-item {
+    font-family: "Playfair", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
 .navbar {
     width: 100%;
     height: 175px;
@@ -41,16 +51,11 @@ h5 {
     border: 0;
 }
 
-.nav-colour {
+.nav-link {
     background-color: #6da577;
     color: #fafafa;
-}
-
-.sidenav {
-    color: #801e01;
-    background-color: #fafafa;
-    font-family: 'Playfair+Display: 700', sans-serif;
-    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .logo-style {
@@ -64,8 +69,37 @@ h5 {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
-
+    position: relative;
+    transition: all .5 ease-in-out;
+    -o-transition: all .5 ease-in-out;
+    -moz-transition: all .5 ease-in-out;
+    -webkit-transition: all .5 ease-in-out;
 }
+.navbar {
+    margin-bottom: 20px;
+    width: 100%;
+    border: 0;
+}
+
+.navbar-toggler {
+    background-color: #801e01;
+    color: #fafafa;
+}
+
+.navbar-toggler.toggler-nav {
+    cursor: pointer;
+}
+
+.btn--color {
+    background-color: #6da577;
+    color: #fafafa;
+}
+
+.navbar-custom {
+    background-color: #fafafa;
+}
+
+
 
 /* --------------------------------------------------------------- imagery on home page*/
 
