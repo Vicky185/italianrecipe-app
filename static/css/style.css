@@ -50,8 +50,7 @@ beige - #e8e1ce
 }
 
 .logo-style {
-    color: #801e01;
-    border-radius: 18px;
+    color: #fafafa;
     text-align: center;
     font-family: "Sacramento", sans-serif;
     font-size: 4em;
@@ -65,14 +64,13 @@ beige - #e8e1ce
     -moz-transition: all .5 ease-in-out;
     -webkit-transition: all .5 ease-in-out;
 }
-.navbar {
-    margin-bottom: 20px;
-    width: 100%;
-    border: 0;
-}
 
-.navbar-toggler {
-    background-color: #801e01;
+.btn.btn-nav {
+    background-color: #6da577;
+    color: #fafafa;
+}
+.btn.btn-nav:hover {
+    background-color: #6da577;
     color: #fafafa;
 }
 
@@ -80,18 +78,6 @@ beige - #e8e1ce
     cursor: pointer;
 }
 
-.btn--color {
-    background-color: #6da577;
-    color: #fafafa;
-}
-
-.navbar-custom {
-    background-color: #fafafa;
-}
-
-.fa-bars {
-    color: #801e01;
-}
 
 
 /* --------------------------------------------------------------- imagery on home page*/
@@ -128,11 +114,10 @@ beige - #e8e1ce
   text-align: center;
 }
 
-.jumbo-heading {
+p.jumbo-heading {
   color: #801e01;
   font-family: 'Sacramento', sans-serif;
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 2em;
   margin-bottom: 30px;
 }
 
@@ -140,7 +125,7 @@ beige - #e8e1ce
 /* --------------------------------------------------------------- card styling */
 
 .card {
-    display: inline-table;
+    display: inline-block;
 }
 
 .card.img{
