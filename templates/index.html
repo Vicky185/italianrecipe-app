@@ -26,10 +26,9 @@
 </div>
 
 <!-- Cards for home page recipe snippets -->
-<div class="container-fluid">
+<div class="container-md">
     {% for recipe in recipes %}
-    <div class="col-md-6 col-sm-4">
-        <div class="card card-spacing-styles" style="width: 18em;">
+        <div class="card card-spacing-styles">
             <div class="card-img-top">
                 <img class="activator card-image-styles" src="{{recipe.image}}" alt="recipeimg">
             </div>
@@ -39,7 +38,6 @@
                 <p><a href="{{url_for('one_recipe', recipe_id=recipe._id)}}">Click here for more...</a></p>
             </div>
         </div>
-    </div>
     {% endfor %}
 </div>
 
