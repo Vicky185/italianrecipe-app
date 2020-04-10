@@ -20,8 +20,19 @@ beige - #e8e1ce
     font-size: 16px;
 }
 
+ button {
+    font-family: 'Playfair+Display: 600', sans-serif;
+    font-size: 14px;
+ }
+
 /* ---------------------------------------------------------------Headers/navbar */
 
+.navbar {
+    width: 100%;
+    margin-bottom: 25px;
+    border: 0;
+    background-color: #6da577;
+}
 .nav-item {
     font-family: "Playfair", sans-serif;
     font-size: 20px;
@@ -30,13 +41,6 @@ beige - #e8e1ce
     padding-right: 10px;
     margin: 10px;
     color: #801e01;
-}
-
-.navbar {
-    width: 100%;
-    margin-bottom: 25px;
-    border: 0;
-    background-color: #6da577;
 }
 
 .nav-link {
@@ -50,11 +54,7 @@ beige - #e8e1ce
     color: #fafafa;
     text-align: center;
     font-family: "Sacramento", sans-serif;
-    font-size: 4em;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
+    font-size: 3.5em;
     position: relative;
     text-decoration: none;
 }
@@ -159,19 +159,32 @@ p.jumbo-heading {
     margin-right: 15px;
 }
 
-.active-pink-2 input.form-control[type=text]:focus:not([readonly]) {
-    border-bottom: 1px solid #f48fb1;
-    box-shadow: 0 1px 0 0 #f48fb1;
-}
-
 
 /*  ---------------------------------------------------------------individual recipe pages styling*/
 
 .recipe-image {
     display: inline-block;
     position: relative;
-    width: 250px;
+    width: 300px;
     height: 250px;
+    margin: 25px;
+    border-color: #801e01;
+    border: 1px;
+    border-radius: 15px;
+}
+
+.edit-button{
+    display: inline-block;
+    background-color: #6da577;
+    color: #fafafa;
+    margin: 25px;
+}
+
+.delete-button{
+    display: inline-block;
+    background-color: #801e01;
+    color: #fafafa;
+    margin: 25px;
 }
 
 
@@ -236,6 +249,16 @@ a.nav-color:hover {
 .logo-style:hover{
     color: #801e01;
 }
+
+button.delete-button:hover {
+    background-color: #B34525;
+}
+
+button.edit-button:hover {
+    background-color: #91A281;
+}
+
+
 
 /* --------------------------------------------------------------- alternative view for media */
 
