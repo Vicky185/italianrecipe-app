@@ -190,9 +190,15 @@ p.jumbo-heading {
 /* --------------------------------------------------------------- create recipe form styling */
 
 p.create-form-style{
-
+    font-family: 'Raleway: 400', sans-serif;
+    font-size: 16px;
 }
 
+.button-submit{
+    color: #fafafa;
+    background-color: #6da577;
+    border: none;
+}
 
 /*  --------------------------------------------------------------- footer styling */
 

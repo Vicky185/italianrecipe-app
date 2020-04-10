@@ -3,16 +3,16 @@
 <h4> Add and Share Your Own Recipe!</h4>
 
 
-<form action="{{url_for('create_recipe')}}" method="POST" class="col-12">
+<form action="{{url_for('create_recipe')}}" method="POST" class="col-12 create-form-style">
         {{ form.csrf_token }}
-        <p class="col-12 create-form-style">
+        <p class="col-12">
             {{ form.title.label }}<br>
             {{ form.title(size=80) }}<br>
             {%  for error in form.title.errors %}
                 <span style="color: red;">{{ error }}</span>
             {% endfor %}
         </p>
-        <p class="col-12 create-form-style">
+        <p class="col-12">
             {{ form.description.label }}<br>
             {{ form.description(cols="120", rows="3") }}<br>
             {%  for error in form.description.errors %}
@@ -20,7 +20,7 @@
             {% endfor %}
         </p>
         <div class="row">
-            <div class="col-md-6 create-form-style">
+            <div class="col-md-6">
                 <p>
                     {{ form.ingredients.label }}<br>
                     {{ form.ingredients(cols="40", rows="16") }}
@@ -29,7 +29,7 @@
                     {% endfor %}
                 </p>
             </div>
-            <div class="col-md-8 create-form-style">
+            <div class="col-md-6">
                 <p>
                     {{ form.method.label }}<br>
                     {{ form.method(cols="80", rows="16") }}
@@ -39,21 +39,21 @@
                 </p>
             </div>
         </div>
-        <p class="col-12 create-form-style">
+        <p class="col-12">
             {{ form.tags.label }}<br>
             {{ form.tags(size=80) }}<br>
             {%  for error in form.tags.errors %}
                 <span style="color: red;">{{ error }}</span>
             {% endfor %}
         </p>
-        <p class="create-form-style">
+        <p class="col-12">
             {{ form.image.label }}<br>
             {{ form.image(size=80) }}<br>
             {%  for error in form.image.errors %}
                 <span style="color: red;">{{ error }}</span>
             {% endfor %}
         </p>
-        <p class="btn btn-light general-text">{{ form.submit() }}</p>
+        <p class="general-text button-submit">{{ form.submit() }}</p>
     </div>
     </form>
 
