@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sacramento|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,900|Sacramento&display=swap');
 
 /* general colours to use for italian styling 
 red - #801e01
@@ -11,17 +11,17 @@ beige - #e8e1ce
 /*--------------------------------------------------------------- General Styles */
 
 .general-text {
-    font-family: 'Playfair+Display: 400', sans-serif;
+    font-family: 'Raleway: 400', sans-serif;
     font-size: 16px;
 }
 
 .italicised-general-text{
-    font-family: 'Playfair+Display: 400i', sans-serif;
+    font-family: 'Raleway: 400i', sans-serif;
     font-size: 16px;
 }
 
  button {
-    font-family: 'Playfair+Display: 600', sans-serif;
+    font-family: 'Raleway: 600', sans-serif;
     font-size: 14px;
  }
 
@@ -34,7 +34,7 @@ beige - #e8e1ce
     background-color: #6da577;
 }
 .nav-item {
-    font-family: "Playfair", sans-serif;
+    font-family: "Raleway: 600", sans-serif;
     font-size: 16px;
     text-align: center;
     padding-top: 10px;
@@ -53,7 +53,7 @@ beige - #e8e1ce
 .logo-style {
     color: #fafafa;
     text-align: center;
-    font-family: "Sacramento", sans-serif;
+    font-family: "Sacramento", cursive;
     font-size: 3.5em;
     position: relative;
     text-decoration: none;
@@ -110,7 +110,7 @@ beige - #e8e1ce
 
 p.jumbo-heading {
   color: #801e01;
-  font-family: 'Sacramento', sans-serif;
+  font-family: 'Sacramento', cursive;
   font-size: 3em;
 }
 
@@ -187,6 +187,12 @@ p.jumbo-heading {
     margin: 25px;
 }
 
+/* --------------------------------------------------------------- create recipe form styling */
+
+p.create-form-style{
+
+}
+
 
 /*  --------------------------------------------------------------- footer styling */
 
@@ -199,12 +205,12 @@ footer {
 }
 
 .footer-text {
-    font-family: "Sacramento", sans-serif;
+    font-family: "Sacramento", cursive;
     font-size: 2em;
 }
 
 .copyright-text {
-    font-family: 'Playfair+Display: 500i', sans-serif;
+    font-family: 'Raleway: 400i', sans-serif;
     font-size: 8px;
     margin: 20px;
 }
@@ -260,17 +266,8 @@ button.edit-button:hover {
 
 
 
-/* --------------------------------------------------------------- alternative view for media */
+/* --------------------------------------------------------------- alternative view for media 
 
 @media (max-width: 480px){
   
-  .custom-brand{
-    float: left;
-    width: 160px;
-    overflow: hidden;
-    clear: left;
-    text-align: right;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
+}*/
