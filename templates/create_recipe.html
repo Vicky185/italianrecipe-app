@@ -5,14 +5,14 @@
 
 <form action="{{url_for('create_recipe')}}" method="POST" class="col-12">
         {{ form.csrf_token }}
-        <p>
+        <p class="col-12 create-form-style">
             {{ form.title.label }}<br>
             {{ form.title(size=80) }}<br>
             {%  for error in form.title.errors %}
                 <span style="color: red;">{{ error }}</span>
             {% endfor %}
         </p>
-        <p>
+        <p class="col-12 create-form-style">
             {{ form.description.label }}<br>
             {{ form.description(cols="120", rows="3") }}<br>
             {%  for error in form.description.errors %}
@@ -20,7 +20,7 @@
             {% endfor %}
         </p>
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-6 create-form-style">
                 <p>
                     {{ form.ingredients.label }}<br>
                     {{ form.ingredients(cols="40", rows="16") }}
@@ -29,7 +29,7 @@
                     {% endfor %}
                 </p>
             </div>
-            <div class="col-8">
+            <div class="col-md-8 create-form-style">
                 <p>
                     {{ form.method.label }}<br>
                     {{ form.method(cols="80", rows="16") }}
@@ -39,21 +39,21 @@
                 </p>
             </div>
         </div>
-        <p>
+        <p class="col-12 create-form-style">
             {{ form.tags.label }}<br>
             {{ form.tags(size=80) }}<br>
             {%  for error in form.tags.errors %}
                 <span style="color: red;">{{ error }}</span>
             {% endfor %}
         </p>
-        <p>
+        <p class="create-form-style">
             {{ form.image.label }}<br>
             {{ form.image(size=80) }}<br>
             {%  for error in form.image.errors %}
                 <span style="color: red;">{{ error }}</span>
             {% endfor %}
         </p>
-        <p>{{ form.submit() }}</p>
+        <p class="btn btn-light general-text">{{ form.submit() }}</p>
     </div>
     </form>
 
