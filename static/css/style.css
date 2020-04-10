@@ -10,6 +10,11 @@ beige - #e8e1ce
 
 /*--------------------------------------------------------------- General Styles */
 
+p {
+    font-family: 'Raleway: 400', sans-serif;
+    font-size: 16px;
+}
+
 .general-text {
     font-family: 'Raleway: 400', sans-serif;
     font-size: 16px;
@@ -119,6 +124,7 @@ p.jumbo-heading {
 
 .card {
     display: inline-block;
+    margin: 15px;
 }
 
 .card.img{
@@ -172,6 +178,11 @@ p.jumbo-heading {
     border: 1px;
     border-radius: 15px;
 }
+
+.ingredients-list{
+
+}
+
 
 .edit-button{
     display: inline-block;

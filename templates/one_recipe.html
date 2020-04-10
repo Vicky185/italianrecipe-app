@@ -7,7 +7,7 @@
 <h2> {{recipe.title}} </h2>
 
 <div class="row">
-    <div class="col-lg-3 general-text">
+    <div class="col-md-12 general-text">
         <p> Views: {{recipe.views}}</p>
         <p> Author: {{recipe.user}}</p>
         <p> Keywords: {{recipe.tags}} </p>
@@ -17,23 +17,25 @@
 <div class="row">
     <div class="col-6 general-text">
         <img class="recipe-image" src="{{recipe.image}}" alt="recipeimg" />
+    </div>
+    <div class="col-6 general-text">
         <h4> Ingredients</h4>
-        <ul> {{recipe.ingredients}}</ul>
+        <ul class="general-text ingredients-list"> {{recipe.ingredients}}</ul>
     </div>
 </div>
-<div class="row">
+<div class="row col-12 general-text">
     <h4> Method steps:</h4>
-    <div class="col-12 general-text">
+    <div>
         <p> {{recipe.method}} </p>
     </div>
 </div>
 
 
 <div class="row">
-    <button href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" type="edit" name="action" class="edit-button">Edit</button>
+    <button href="{{url_for('edit_recipe')}}" type="edit" name="action" class="edit-button">Edit</button>
 </div>
 <div class="row">
-    <button href="{{url_for('delete_recipe', recipe_id=recipe._id)}}" type="delete" name="action" class="delete-button">Delete</button>
+    <button href="{{url_for('delete_recipe')}}" type="delete" name="action" class="delete-button">Delete</button>
 </div>
 
 {% endblock %}
