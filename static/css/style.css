@@ -29,15 +29,12 @@ beige - #e8e1ce
     padding-top: 10px;
     padding-right: 10px;
     margin: 10px;
-    text-transform: uppercase;
     color: #801e01;
 }
 
 .navbar {
     width: 100%;
-    height: 175px;
-    margin-bottom: 15px;
-    padding: 25px;
+    margin-bottom: 25px;
     border: 0;
     background-color: #6da577;
 }
@@ -59,10 +56,7 @@ beige - #e8e1ce
     margin-left: 15px;
     margin-right: 15px;
     position: relative;
-    transition: all .5 ease-in-out;
-    -o-transition: all .5 ease-in-out;
-    -moz-transition: all .5 ease-in-out;
-    -webkit-transition: all .5 ease-in-out;
+    text-decoration: none;
 }
 
 .btn.btn-nav {
@@ -85,7 +79,7 @@ beige - #e8e1ce
 .callout-container {
   height: 50vh;
 
-  background: url('../images/italia1.jpeg') no-repeat bottom right fixed;
+  background: url('../images/italia1.jpeg') no-repeat bottom center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -117,8 +111,7 @@ beige - #e8e1ce
 p.jumbo-heading {
   color: #801e01;
   font-family: 'Sacramento', sans-serif;
-  font-size: 2em;
-  margin-bottom: 30px;
+  font-size: 3em;
 }
 
 
@@ -190,13 +183,11 @@ footer {
     min-height: 100px;
     text-align: center;
     margin-top: 50px;
-    padding: 15px;
 }
 
 .footer-text {
     font-family: "Sacramento", sans-serif;
     font-size: 2em;
-    margin: 20px;
 }
 
 .copyright-text {
@@ -217,7 +208,7 @@ footer {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #2f6002;
+    background-color: #6da577;
     color: #fafafa;
     cursor: pointer;
     padding: 15px;
@@ -225,7 +216,7 @@ footer {
 }
 
 #myBtn:hover {
-    background-color: #6da577;
+    background-color: #2f6002;
 }
 
 /* --------------------------------------------------------------- hovers for different elements */
@@ -233,7 +224,6 @@ footer {
 
 .ui-nav-color:hover {
     color: #801e01;
-    background-color: #dbaea8;
     text-align: center;
     text-decoration: none;
     transition: ease-in-out;
@@ -244,7 +234,7 @@ a.nav-color:hover {
 }
 
 .logo-style:hover{
-    color: #dbaea8;
+    color: #801e01;
 }
 
 /* --------------------------------------------------------------- alternative view for media */

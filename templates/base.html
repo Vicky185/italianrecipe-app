@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="static/css/style.css" type="text/css" />
 	<link
 		href="https://fonts.googleapis.com/css?family=Sacramento|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
@@ -22,11 +23,12 @@
 
 <body>
 
+	
 	<!-- navbar -->
 	<nav class="navbar navbar-expand-md navbar-custom">
 
 		<!-- Navbar brand -->
-		<a class="navbar col-md-4 col-sm-6 logo-style" href="{{url_for('index')}}">Italian Gluttony</a>
+		<a class="navbar col-md-4 col-sm-12 logo-style" href="{{url_for('index')}}">Italian Gluttony</a>
 
 		<!-- Collapse button -->
 		<button class="navbar-toggler toggler-nav" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"><span class="btn btn-nav"><i class="fas fa-bars fa-1x" onclick="myFunction()"></i></span></button>
@@ -57,15 +59,15 @@
 
 
 
-	<div class="container container-main-body">
+	<div class="container-fluid container-main-body">
 		{% block content %} {% endblock %}
 	</div>
 
 </body>
 
-<footer class="container-fluid footer-text">
+<footer class="container-fluid">
 	<div class="col-12">
-		<div class="text-center"> Forever Italian...</div>
+		<div class="footer-text text-center"> Forever Italian...</div>
 	</div>
 	<div class="col-12">
 		<div class="copyright-text text-center"> Copyright &copy; Italian Gluttony </div>
@@ -76,27 +78,21 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
+
 
 <script>
-	function myFunction() {
-    var navig = document.getElementById("nav-links");
-    if (navig.style.display === "block") {
-    navig.style.display = "none";
-     } else {
-    navig.style.display = "block";
-    }
-}
         
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() { scrollFunction() };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("myBtn").style.display = "block".fadeIn();
             }
             else {
-                document.getElementById("myBtn").style.display = "none";
+                document.getElementById("myBtn").style.display = "none".fadeOut();
             }
         }
 
@@ -104,6 +100,10 @@
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        }
+
+        document.getElementById('myBtn').click(function(){ 
+        ("html, body").animate({ scrollTop: 0 }, 600); 
         }
 </script>
 
