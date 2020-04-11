@@ -168,7 +168,6 @@ p.jumbo-heading {
 /*  ---------------------------------------------------------------individual recipe pages styling*/
 
 .recipe-image {
-    display: inline-block;
     position: relative;
     width: 300px;
     height: 250px;
@@ -179,7 +178,7 @@ p.jumbo-heading {
 }
 
 .ingredients-list{
-
+    white-space: pre-wrap;
 }
 
 

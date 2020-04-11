@@ -26,19 +26,20 @@
 </div>
 
 <!-- Cards for home page recipe snippets -->
-<div class="container-fluid">
-    {% for recipe in recipes %}
-        <div class="card card-spacing-styles">
-            <div class="card-img-top">
-                <img class="activator card-image-styles" src="{{recipe.image}}" alt="recipeimg">
-            </div>
-            <div class="card-body">
-                <span class="card-title">{{recipe.title}}</span>
-                <p class="card-text">{{recipe.description}}</p>
-                <p><a href="{{url_for('one_recipe', recipe_id=recipe._id)}}">Click here for more...</a></p>
-            </div>
-        </div>
-    {% endfor %}
+<div class="row">
+	{% for recipe in recipes %}
+	<div class="col-12">
+		<div class="card" style="width: 25em;">
+			<img src="{{recipe.image}}" class="card-img-top" alt="recipeimg">
+			<div class="card-body">
+				<h5 class="card-title">{{recipe.title}}</h5>
+				<p class="card-text">{{recipe.description}}</p>
+				<a href="{{url_for('one_recipe', recipe_id=recipe._id)}}" class="btn btn-primary">Click here for
+					more...</a>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
 </div>
 
 
