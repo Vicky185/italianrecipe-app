@@ -1,4 +1,4 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% block content %}
 
 <!-- all recipes when coming in from the nav  -->
@@ -10,7 +10,8 @@
 			<div class="card-body">
 				<h5 class="card-title">{{recipe.title}}</h5>
 				<p class="card-text">{{recipe.description}}</p>
-				<a href="{{url_for('one_recipe', recipe_id=recipe._id)}}" class="btn btn-primary">Click here for more...</a>
+				<a href="{{url_for('one_recipe', recipe_id=recipe._id)}}" class="btn btn-primary">Click here for
+					more...</a>
 			</div>
 		</div>
 	</div>
@@ -20,17 +21,19 @@
 <div>
 	<nav aria-label="More Recipes...">
 		<ul class="pagination pagination-lg justify-content-center">
-			{% for pagenumber in pages %} 
-                {% if pagenumber == page %}
-			        <li class="page-item active">
-				        <span class="page-link">{{ pagenumber }}
-                             <span class="sr-only">(current)</span>
-				        </span>
-			        </li>
-			    {% else %}
-			        <li class="page-item"><a class="page-link" href="{{ url_for('get_all_recipes', page=pagenumber) }}">{{ pagenumber }}</a></li>
-			    {% endif %} 
-            {% endfor %}
+			{% for pagenumber in pages %}
+			{% if pagenumber == page %}
+			<li class="page-item active">
+				<span class="page-link">{{ pagenumber }}
+                        <span>...</span>
+				<span class="sr-only">(current)</span>
+				</span>
+			</li>
+			{% else %}
+			<li class="page-item"><a class="page-link"
+					href="{{ url_for('get_all_recipes', page=pagenumber) }}">{{ pagenumber }}</a></li>
+			{% endif %}
+			{% endfor %}
 		</ul>
 	</nav>
 </div>
