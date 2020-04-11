@@ -1,7 +1,7 @@
-from flask import Flask, render_template, redirect, request, url_for, session
+from flask import Flask, render_template, redirect, request, url_for
 import os
 from flask_pymongo import PyMongo
-from forms import CreateRecipeForm, EditRecipeForm, ConfirmDelete, LoginForm
+from forms import CreateRecipeForm, EditRecipeForm, ConfirmDelete
 from config import Config
 from bson.objectid import ObjectId
 import math
