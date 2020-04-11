@@ -75,7 +75,7 @@ def create_recipe():
  
 
 # Edit a previously uploaded recipe 
-@app.route('/edit_recipe/<recipe_id>', methods=['POST'])
+@app.route('/edit_recipe/<recipe_id>', methods=['POST', 'GET'])
 def edit_recipe(recipe_id):
     recipe_db = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
     if request.method == 'GET':
