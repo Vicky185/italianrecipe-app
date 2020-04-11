@@ -100,7 +100,7 @@ def edit_recipe(recipe_id):
     return render_template('edit_recipe.html', recipe=recipe_db, form=form)
 
 # Delete Recipe
-@app.route('/delete_recipe/<recipe_id>', methods=['POST'])
+@app.route('/delete_recipe/<recipe_id>', methods=['POST', 'GET'])
 def delete_recipe(recipe_id):
     recipe_db = mongo.db.recipes.find_one_and_delete({'_id': ObjectId(recipe_id)})
     form = ConfirmDelete(data=recipe_db)
