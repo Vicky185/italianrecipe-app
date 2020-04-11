@@ -75,9 +75,9 @@ def create_recipe():
  
 
 # Edit a previously uploaded recipe 
-@app.route('/edit_recipe/<recipe_id>', methods=['POST', 'GET'])
+@app.route('/edit_recipe/<recipe_id>', methods=['POST'])
 def edit_recipe(recipe_id):
-    recipe_db = mongo.db.recipes.find_one_and_update({'_id': ObjectId(recipe_id)})
+    recipe_db = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
     if request.method == 'GET':
         form = EditRecipeForm(data=recipe_db)
         return render_template('edit_recipe.html', recipe=recipe_db, form=form)
@@ -100,7 +100,7 @@ def edit_recipe(recipe_id):
     return render_template('edit_recipe.html', recipe=recipe_db, form=form)
 
 # Delete Recipe
-@app.route('/delete_recipe/<recipe_id>')
+@app.route('/delete_recipe/<recipe_id>', methods=['POST'])
 def delete_recipe(recipe_id):
     recipe_db = mongo.db.recipes.find_one_and_delete({'_id': ObjectId(recipe_id)})
     form = ConfirmDelete(data=recipe_db)

@@ -130,7 +130,7 @@ p.jumbo-heading {
 
 .card-img-top {
     max-height: 350px;
-    max-width: 450px;
+    max-width: 400px;
 }
 
 
@@ -160,8 +160,8 @@ p.jumbo-heading {
 /* --------------------------------------------------------------- search bar styling */
 
 .search-row {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 15px;
     margin-right: 15px;
 }
