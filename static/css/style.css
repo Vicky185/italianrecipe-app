@@ -125,12 +125,14 @@ p.jumbo-heading {
 .card {
     display: inline-block;
     margin: 15px;
+    width: 25em;
 }
 
-.card.img{
-    width: 300px;
-    height: 300px;
+.card-img-top {
+    max-height: 350px;
+    max-width: 450px;
 }
+
 
 .card-spacing-styles {
     margin: 15px 20px;
