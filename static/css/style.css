@@ -206,14 +206,14 @@ p.jumbo-heading {
 }
 
 
-.edit-button{
+.btn-edit{
     display: inline-block;
     background-color: #6da577;
     color: #fafafa;
     margin: 25px;
 }
 
-.delete-button{
+.btn-delete{
     display: inline-block;
     background-color: #801e01;
     color: #fafafa;
