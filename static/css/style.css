@@ -268,7 +268,7 @@ footer {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #6da577;
+    background-color: #2f6002;
     color: #fafafa;
     cursor: pointer;
     padding: 15px;
@@ -276,8 +276,8 @@ footer {
 }
 
 #myBtn:hover {
-    background-color: #2f6002;
-    color: #fafafa;
+    background-color: #fafafa;
+    color: #2f6002;
 }
 
 /* --------------------------------------------------------------- hovers for different elements */
