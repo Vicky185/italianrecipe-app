@@ -11,6 +11,10 @@ charcoal grey - #747373
 
 /*--------------------------------------------------------------- General Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -148,6 +152,7 @@ p.jumbo-heading {
 .card-img-top {
     max-height: 350px;
     width: 300px;
+    padding: 3px;
 }
 
 .card-body {
@@ -272,6 +277,7 @@ footer {
 
 #myBtn:hover {
     background-color: #2f6002;
+    color: #fafafa;
 }
 
 /* --------------------------------------------------------------- hovers for different elements */

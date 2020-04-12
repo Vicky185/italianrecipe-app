@@ -2,15 +2,14 @@
 {% block content %}
 
 <!-- all recipes when coming in from the nav  -->
-<div class="row">
+<div class="row justify-content-md-center">
 	{% for recipe in recipes %}
-	<div class="col-6">
-		<div class="card" style="width: 25em;">
+		<div class="card">
 			<img src="{{recipe.image}}" class="card-img-top" alt="recipeimg">
 			<div class="card-body">
 				<h5 class="card-title">{{recipe.title}}</h5>
 				<p class="card-text">{{recipe.description}}</p>
-				<a href="{{url_for('one_recipe', recipe_id=recipe._id)}}" class="btn btn-primary">Click here for
+				<a href="{{url_for('one_recipe', recipe_id=recipe._id)}}" class="btn btn-click-more">Click here for
 					more...</a>
 			</div>
 		</div>
