@@ -151,7 +151,7 @@ p.jumbo-heading {
 
 .card-img-top {
     max-height: 350px;
-    width: 300px;
+    width: 100%;
     padding: 3px;
 }
 
