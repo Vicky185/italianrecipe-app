@@ -150,7 +150,7 @@ p.jumbo-heading {
 }
 
 .card-img-top {
-    max-height: 350px;
+    max-height: 300px;
     width: 100%;
     padding: 3px;
 }
@@ -313,7 +313,7 @@ button.edit-button:hover {
 
 /* --------------------------------------------------------------- alternative view for media */
 
-@media (min-width: 480px) {
+@media(min-width: 768px) {
     .card {
         display: inline-block;
         width: 25em;
@@ -324,5 +324,12 @@ button.edit-button:hover {
     }
     .p.jumbo-heading {
         font-size: 3em;
-}
+    }
+    .logo-style {
+    color: #fafafa;
+    background-color: #6da577;
+    font-family: "Sacramento", cursive;
+    font-size: 4em;
+    text-decoration: none;
+    }
 }
