@@ -2,7 +2,6 @@
 {% block content %}
 
 <!-- all recipes when coming in from the nav  -->
-<div class="row justify-content-md-center">
 	{% for recipe in recipes %}
 		<div class="card">
 			<img src="{{recipe.image}}" class="card-img-top" alt="recipeimg">
@@ -13,10 +12,7 @@
 					more...</a>
 			</div>
 		</div>
-	</div>
 	{% endfor %}
-</div>
-
 <div>
 	<nav aria-label="More Recipes...">
 		<ul class="pagination pagination-lg justify-content-center">

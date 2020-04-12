@@ -26,7 +26,7 @@
 </div>
 
 <!-- Cards for home page recipe snippets -->
-<div class="row justify-content-md-center">
+<div class="row">
 	{% for recipe in recipes %}
 		<div class="card">
 			<img src="{{recipe.image}}" class="card-img-top" alt="recipeimg">
@@ -37,7 +37,6 @@
 					more...</a>
 			</div>
 		</div>
-	</div>
 	{% endfor %}
 </div>
 
