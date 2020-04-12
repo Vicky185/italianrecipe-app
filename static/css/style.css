@@ -6,28 +6,47 @@ dark green - #2f6002
 pink - #dbaea8
 light green - #6da577
 beige - #e8e1ce
+charcoal grey - #747373
 */
 
 /*--------------------------------------------------------------- General Styles */
 
 p {
-    font-family: 'Raleway: 400', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    color: #747373;
 }
 
 .general-text {
-    font-family: 'Raleway: 400', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    color: #747373;
 }
 
 .italicised-general-text{
-    font-family: 'Raleway: 400i', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
 }
 
  button {
-    font-family: 'Raleway: 600', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    font-weight: 400;
+ }
+
+ h1
+ h2
+ h3
+ h4
+ h5
+ h6 {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 600;
+     letter-spacing: 1.5px;
  }
 
 /* ---------------------------------------------------------------Headers/navbar */
@@ -39,7 +58,7 @@ p {
     background-color: #6da577;
 }
 .nav-item {
-    font-family: "Raleway: 600", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     text-align: center;
     padding-top: 10px;
@@ -125,28 +144,28 @@ p.jumbo-heading {
 .card {
     display: inline-block;
     margin: 15px;
-    width: 25em;
+    width: 19em;
 }
 
 .card-img-top {
     max-height: 350px;
-    max-width: 400px;
+    width: 300px;
 }
 
+.card-body {
+    padding: 1rem;
+}
 
 .card-spacing-styles {
     margin: 15px 20px;
     padding: 5px;
 }
 
-.card-image-styles{
-    width: 250px;
-    height:250px;
-}
-.card-styling {
-    position: relative;
-    padding: 10px;
-    margin: 20px;
+.btn-click-more {
+    background-color: #2f6002;
+    color: #fafafa;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
 
 .recipes-pages {
@@ -201,7 +220,7 @@ p.jumbo-heading {
 /* --------------------------------------------------------------- create recipe form styling */
 
 p.create-form-style{
-    font-family: 'Raleway: 400', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
 }
 
@@ -227,7 +246,7 @@ footer {
 }
 
 .copyright-text {
-    font-family: 'Raleway: 400i', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 8px;
     margin: 20px;
 }
@@ -281,10 +300,20 @@ button.edit-button:hover {
     background-color: #91A281;
 }
 
+.btn-click-more:hover {
+    background-color: #6da577;
+}
 
 
-/* --------------------------------------------------------------- alternative view for media 
+/* --------------------------------------------------------------- alternative view for media */
 
-@media (max-width: 480px){
-  
-}*/
+@media (max-width: 480px) {
+    .card {
+        display: inline-block;
+        width: 25em;
+    }
+    .card-img-top {
+        max-height: 350px;
+        max-width: 400px;
+    }
+}
