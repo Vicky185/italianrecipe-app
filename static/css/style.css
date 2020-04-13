@@ -139,10 +139,10 @@ textarea {
   text-align: center;
 }
 
-p.jumbo-heading {
+.jumbo-heading {
   color: #801e01;
   font-family: 'Sacramento', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 
@@ -328,8 +328,7 @@ button.edit-button:hover {
         width: 100%;
         padding: 5px;
     }
-    
-    .p.jumbo-heading {
+    .jumbo-heading {
         font-size: 3em;
     }
     .logo-style {
@@ -338,7 +337,6 @@ button.edit-button:hover {
         font-family: "Sacramento", cursive;
         font-size: 3em;
         text-decoration: none;
-
     }
     .recipe-image {
         position: relative;
