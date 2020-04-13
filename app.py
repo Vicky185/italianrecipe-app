@@ -24,7 +24,7 @@ def index():
 # Get/Look at all recipes
 @app.route('/get_all_recipes')
 def get_all_recipes():
-    recipes_per_page = 6
+    recipes_per_page = 8
     page = int(request.args.get('page', 1))
     count_total = mongo.db.recipes.count_documents({})
     all_recipes = mongo.db.recipes.find().skip((page - 1)*recipes_per_page).limit(recipes_per_page)
