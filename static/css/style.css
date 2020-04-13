@@ -42,7 +42,7 @@ p {
     font-weight: 400;
  }
 
- h2
+ h2,
  h4 {
      font-family: 'Raleway', sans-serif;
      font-weight: 600;
@@ -337,6 +337,7 @@ button.edit-button:hover {
         font-family: "Sacramento", cursive;
         font-size: 3em;
         text-decoration: none;
+        margin-right: 25px;
     }
     .recipe-image {
         position: relative;
