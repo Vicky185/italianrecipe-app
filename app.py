@@ -18,13 +18,13 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    home_page_recipes = mongo.db.recipes.find().limit(4)
+    home_page_recipes = mongo.db.recipes.find().limit(3)
     return render_template("index.html", recipes=home_page_recipes)
 
 # Get/Look at all recipes
 @app.route('/get_all_recipes')
 def get_all_recipes():
-    recipes_per_page = 8
+    recipes_per_page = 6
     page = int(request.args.get('page', 1))
     count_total = mongo.db.recipes.count_documents({})
     all_recipes = mongo.db.recipes.find().skip((page - 1)*recipes_per_page).limit(recipes_per_page)
