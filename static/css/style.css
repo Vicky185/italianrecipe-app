@@ -93,7 +93,7 @@ textarea {
     background-color: #6da577;
     text-align: center;
     font-family: "Sacramento", cursive;
-    font-size: 2.5em;
+    font-size: 4em;
     text-decoration: none;
 }
 
@@ -145,7 +145,7 @@ textarea {
 p.jumbo-heading {
   color: #801e01;
   font-family: 'Sacramento', cursive;
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 
@@ -163,6 +163,10 @@ p.jumbo-heading {
     padding: 5px;
 }
 
+    .card-img-top {
+        max-height: 350px;
+        max-width: 400px;
+    }
 .card-body {
     padding: 1rem;
 }
@@ -321,23 +325,25 @@ button.edit-button:hover {
 
 /* --------------------------------------------------------------- alternative view for media */
 
-@media(min-width: 768px) {
+@media(max-width: 768px) {
     .card {
         display: inline-block;
-        width: 25em;
+        width: 19em;
     }
     .card-img-top {
-        max-height: 350px;
-        max-width: 400px;
+        height: 300px;
+        width: 100%;
+        padding: 5px;
     }
     .p.jumbo-heading {
-        font-size: 3em;
+        font-size: 1.5em;
     }
     .logo-style {
-    color: #fafafa;
-    background-color: #6da577;
-    font-family: "Sacramento", cursive;
-    font-size: 4em;
-    text-decoration: none;
+        color: #fafafa;
+        background-color: #6da577;
+        font-family: "Sacramento", cursive;
+        font-size: 2.5em;
+        text-decoration: none;
+
     }
 }
