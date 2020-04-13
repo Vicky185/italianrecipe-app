@@ -4,7 +4,7 @@
 
 <!-- Cards for results of recipes search -->
 <div class="row">
-	{% for recipe in recipes %}
+    {% for recipe in results %}
 		<div class="card">
 			<img src="{{recipe.image}}" class="card-img-top" alt="recipeimg">
 			<div class="card-body">
@@ -15,5 +15,6 @@
 		</div>
 	{% endfor %}
 </div>
+
 
 {% endblock %}
