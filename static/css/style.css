@@ -93,7 +93,7 @@ textarea {
     background-color: #6da577;
     text-align: center;
     font-family: "Sacramento", cursive;
-    font-size: 4em;
+    font-size: 2.5em;
     text-decoration: none;
 }
 
@@ -145,7 +145,7 @@ textarea {
 p.jumbo-heading {
   color: #801e01;
   font-family: 'Sacramento', cursive;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 
@@ -163,10 +163,6 @@ p.jumbo-heading {
     padding: 5px;
 }
 
-    .card-img-top {
-        max-height: 350px;
-        max-width: 400px;
-    }
 .card-body {
     padding: 1rem;
 }
@@ -325,25 +321,35 @@ button.edit-button:hover {
 
 /* --------------------------------------------------------------- alternative view for media */
 
-@media(max-width: 768px) {
+@media(min-width: 768px) {
     .card {
         display: inline-block;
-        width: 19em;
+        width: 25em;
     }
     .card-img-top {
-        height: 300px;
+        height: 350px;
         width: 100%;
         padding: 5px;
     }
+    
     .p.jumbo-heading {
-        font-size: 1.5em;
+        font-size: 3em;
     }
     .logo-style {
         color: #fafafa;
         background-color: #6da577;
         font-family: "Sacramento", cursive;
-        font-size: 2.5em;
+        font-size: 3em;
         text-decoration: none;
 
+    }
+    .recipe-image {
+        position: relative;
+        width: 450px;
+        height: 400px;
+        margin: 25px;
+        border-color: #801e01;
+        border: 1px;
+        border-radius: 15px;
     }
 }
