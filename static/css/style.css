@@ -53,6 +53,14 @@ p {
      letter-spacing: 1.5px;
  }
 
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%
+}
+
 /* ---------------------------------------------------------------Headers/navbar */
 
 .navbar {
@@ -150,9 +158,9 @@ p.jumbo-heading {
 }
 
 .card-img-top {
-    max-height: 300px;
+    height: 300px;
     width: 100%;
-    padding: 3px;
+    padding: 5px;
 }
 
 .card-body {
