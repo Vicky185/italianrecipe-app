@@ -18,7 +18,7 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    home_page_recipes = mongo.db.recipes.find().limit(3)
+    home_page_recipes = mongo.db.recipes.find().limit(4)
     return render_template("index.html", recipes=home_page_recipes)
 
 # Get/Look at all recipes
