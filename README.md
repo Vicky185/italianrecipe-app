@@ -8,10 +8,11 @@ In this app, users will be able to view, add/create/upload, share, edit and dele
 _[Visit the website here](http://italia-recipes-app.herokuapp.com/index "Visit the website here")_
 
 
+
 ## The User Experience (UX)
 ***
 
-### Project purpose
+#### Project purpose
 
 To provide an application which makes you immediately think of Italy. This is a website for Italians, fans of Italian food and cuisine, and those who love to cook. They will be able to share recipes with others but also view what others have uploaded and continue to inspire their cooking. 
 
@@ -24,7 +25,7 @@ The following requirements were set at the beginning of the project:
 * needs to have a page where you can see all the recipes
 * needs to be able to search for recipes.
 
-### User stories
+#### User stories
 
 As a general user, 
 * I want the page to be simple and easy to use
@@ -39,6 +40,8 @@ As an existing chef/amateur cook, I want
 As a potential user and fan of Italian food, I want 
 * to find and view new recipes to try
 * to be able to add recipes if i want to
+
+
 
 ## Features
 ***
@@ -59,12 +62,14 @@ For this site, a range of features were used:
 * example and downloadable set lists from previous events
 * testimonials from fans who have hired the band for performances
 
-# Structure
+
+
+## Structure
 ***
 
-## Skeleton 
+### Skeleton 
 
-#### Wireframes:
+##### Wireframes:
 
 * [Home page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/home-page.jpg "Home page")
 * [One Recipe page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/only-one-recipe-page.jpg "One Recipe page")
@@ -74,21 +79,22 @@ For this site, a range of features were used:
 * [Delete Recipe page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/delete-page.jpg "Delete Recipe page")
 * [Search Recipe page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/search-page.jpg "Search Recipe page")
 
-## Surface / Design
+### Surface / Design
 
-#### Fonts
+##### Fonts
 
-* Sacramento - a cursive font, very much portraying an Italian, classic but also chef theme
-..* https://fonts.google.com/specimen/Sacramento
+* Sacramento - a cursive font, very much portraying an Italian, classic but also chef theme - *https://fonts.google.com/specimen/Sacramento*
 
-* Raleway - for general text, less standout but also a font style which speaks classic, sleek and in line with the cooking and Italian theme
-..* https://fonts.google.com/specimen/Raleway
+* Raleway - for general text, less standout but also a font style which speaks classic, sleek and in line with the cooking and Italian theme - *https://fonts.google.com/specimen/Raleway*
 
-#### Colours 
+##### Colours 
 
 ![Italian Colour Palette](static/images/colours.jpeg "Italian colour palette")
+![Italian Colour Palette](static/images/colours2.png "Italian colour palette")
 
-# Technologies
+
+
+## Technologies
 ***
 
 Below is listed all of the technologies used to create this site:
@@ -97,29 +103,35 @@ Below is listed all of the technologies used to create this site:
 * CSS
 * JavaScript
     ** Scroll to top button - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-    ** Carousel image slider on home page - https://getbootstrap.com/docs/4.3/components/carousel/
 * JQuery
     ** For dropdown and collapsable navbar - https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/
 * Bootstrap - https://getbootstrap.com/
 * Google Fonts - https://fonts.google.com/
-* Cloud9 - as IDE
+* Gitpod - as IDE
 * GitHub - as the remote backup used on this project and for other project users to view the code
+* Heroku - as the deployment method
+* MongoDB - as the database used for all information that is uploaded and displayed in each recipe
 
-# Testing
+
+## Testing
 ***
 
 #### UX
 
-* The user is able to see album covers of the band'smusic and listen to their songs
-* The user is able to watch a music video of song: 'Daydream Believer'
-* The user is able to see a background image on the contact page when on desktop/tablet but white background on phone
-* The user is able to send an enquiry form
+* The user is able to see a couple of recipes on the home page
+* The user is able to search keywords in the search bar, then upon search is taken to a results page
+* The user is able to view each recipe individually and clearly view the ingredients/method
+* The user is able to view a small image of what the recipe looks like
+* The user is able to store/create/upload a new recipe
+* The user is able to edit or delete an uploaded recipe
+* When the user adds a recipe, they are notified if they have filled the form wrong
+* The user is able to have a dropdown menu when on a ipad/mobile device
 * The user is able to scroll down to the bottom of the page and quickly scroll up with scroll up button on bottom right of page
-* The user is able access the band's social media pages (Youtube, Twitter and Facebook)
-* By clicking subscribe and 'Contact page' in the About section, the user will be able taken to new tab (contact page) where they can fill out a contact form
+* The user is able access all recipes
+
 
 Examples:
-* when user clicks 'Send' button on contact form, error will read if user hasn't filled out 'Name', 'Email' and Event description/detail' - only optional field is 'Subject'
+* when user clicks 'Click here for more...' button on the small recipe card/snippet, they will be taken to a new page. If they choose to delete they will be asked to confirm. If they ask to edit, they will be taken to a page of the recipe in the form and ready to be updated. If they remove all content from one field, an error will read: 'Please fill in this field'. This is the same when they create a recipe from scratch. 
 
 *For a decription of the different screen sizes, please visit _[here](https://github.com/Vicky185/milestone1-monkees/blob/master/description-screens.md "here")_
 
