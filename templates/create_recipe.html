@@ -4,7 +4,7 @@
 
 <h4>Add and Share Your Own Recipe!</h4>
 
-
+<!-- forms for creating and adding a new recipe-->
 <form action="{{url_for('create_recipe')}}" method="POST" class="create-form-style">
         {{ form.csrf_token }}
         <p class="col-12">
@@ -60,3 +60,4 @@
     </form>
 
 {% endblock %}
+<!-- forms for creating and adding a new recipe-->

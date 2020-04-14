@@ -1,7 +1,7 @@
 {% extends "base.html" %} 
 {% block content %}
 
-
+<!-- drawing on forms.py delete confirmation form-->
 <form action="" method="POST" enctype="multipart/form-data" class="col s12">
     {{ form.csrf_token }}
     <p>
@@ -15,3 +15,5 @@
 </form>
 
 {% endblock %}
+
+<!-- end of delete confirmation form-->

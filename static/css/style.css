@@ -250,6 +250,18 @@ p.create-form-style{
     border: none;
 }
 
+/* -------------------------------------------------------------------page number button styles */
+
+.page-num-color {
+    background-color: #801e01;
+    color: #fafafa
+}
+
+.page-num-color:hover {
+    background-color: #fafafa;
+    color: #801e01;
+}
+
 /*  --------------------------------------------------------------- footer styling */
 
 footer {
