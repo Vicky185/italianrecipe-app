@@ -219,6 +219,10 @@ hr {
     margin-bottom: 40px;
 }
 
+.method-list{
+    white-space: pre-wrap;
+}
+
 .btn-edit{
     display: inline-block;
     background-color: #6da577;
