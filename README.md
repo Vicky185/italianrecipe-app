@@ -66,9 +66,13 @@ For this site, a range of features were used:
 
 #### Wireframes:
 
-* [Home page](https://github.com/Vicky185/milestone1-monkees/blob/master/assets/Wireframe%20-%20index.html%20mobile%20and%20desktop%2Ctablet.jpg "Home page")
-* [Music page](https://github.com/Vicky185/milestone1-monkees/blob/master/assets/Wireframe%20-%20music.html%20mobile%20and%20desktop%2Ctablet.jpg "Music page")
-* [Contact page](https://github.com/Vicky185/milestone1-monkees/blob/master/assets/Wireframe%20-%20contact.html%20mobile%20and%20desktop%2Ctablet.jpg "Contact page")
+* [Home page]( "Home page")
+* [One Recipe page]( "One Recipe page")
+* [All Recipes page]( "All Recipes page")
+* [Add Recipe page]( "All Recipes page")
+* [Edit Recipe page]( "Edit Recipe page")
+* [Delete Recipe page]( "Delete Recipe page")
+* [Search Recipe page]( "Search Recipe page")
 
 ## Surface / Design
 
