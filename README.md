@@ -66,13 +66,13 @@ For this site, a range of features were used:
 
 #### Wireframes:
 
-* [Home page]( "Home page")
-* [One Recipe page]( "One Recipe page")
-* [All Recipes page]( "All Recipes page")
-* [Add Recipe page]( "All Recipes page")
-* [Edit Recipe page]( "Edit Recipe page")
-* [Delete Recipe page]( "Delete Recipe page")
-* [Search Recipe page]( "Search Recipe page")
+* [Home page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/home-page.jpg "Home page")
+* [One Recipe page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/only-one-recipe-page.jpg "One Recipe page")
+* [All Recipes page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/look-all-recipes.jpg "All Recipes page")
+* [Add Recipe page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/add-recipe.jpg "All Recipes page")
+* [Edit Recipe page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/edit-page.jpg "Edit Recipe page")
+* [Delete Recipe page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/delete-page.jpg "Delete Recipe page")
+* [Search Recipe page](https://github.com/Vicky185/italianrecipe-app/blob/master/static/Wireframes/search-page.jpg "Search Recipe page")
 
 ## Surface / Design
 
