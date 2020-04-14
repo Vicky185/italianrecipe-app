@@ -70,7 +70,7 @@ def create_recipe():
             'image': request.form['image'],
             'views': 0
         })
-        return redirect(url_for('index', title='New Recipe Added'))
+        return redirect(url_for('get_all_recipes', title='New Recipe Added'))
     return render_template('create_recipe.html', title='create a recipe', form=form)
  
 
@@ -96,7 +96,7 @@ def edit_recipe(recipe_id):
                 'image': request.form['image'],
             }
         })
-        return redirect(url_for('index', title='New Recipe Added'))
+        return redirect(url_for('get_all_recipes', title='New Recipe Added'))
     return render_template('edit_recipe.html', recipe=recipe_db, form=form)
 
 # Delete Recipe
@@ -109,7 +109,7 @@ def delete_recipe(recipe_id):
         recipes_db.delete_one({
             '_id': ObjectId(recipe_id)
         })
-        return redirect(url_for('index', title='Updated List of Recipes'))
+        return redirect(url_for('get_all_recipes', title='Updated List of Recipes'))
     return render_template('delete_recipe.html', title="delete recipe", recipe=recipe_db, form=form)
 
 
