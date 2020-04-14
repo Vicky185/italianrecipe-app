@@ -12,15 +12,17 @@
 		<p> {{recipe.description}}</p>
 	</div>
 </div>
-<div class="row">
-	<div class="col-md-12 col-lg-6 general-text">
+<hr>
+<div class="row ingredients-and-img">
+	<div class="col-lg-6">
 		<h4>Ingredients</h4>
 		<ul class="general-text ingredients-list"> {{recipe.ingredients}}</ul>
 	</div>
-	<div class="col-md-12 col-lg-6 general-text">
+	<div class="col-lg-6">
 		<img class="recipe-image" src="{{recipe.image}}" alt="recipeimg"/>
     </div>
 </div>
+<hr>
 <div class="row col-12 general-text">
 	<h4> Method steps:</h4>
 	<div>

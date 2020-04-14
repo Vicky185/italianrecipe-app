@@ -58,6 +58,11 @@ textarea {
     width: 100%
 }
 
+hr {
+    color: #D3D3D3;
+    margin: 25px 15px;
+}
+
 /* ---------------------------------------------------------------Headers/navbar */
 
 .navbar {
@@ -210,6 +215,9 @@ textarea {
     white-space: pre-wrap;
 }
 
+.ingredients-and-img {
+    margin-bottom: 40px;
+}
 
 .btn-edit{
     display: inline-block;
