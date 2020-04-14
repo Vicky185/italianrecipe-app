@@ -90,7 +90,7 @@ For this site, a range of features were used:
 ##### Colours 
 
 ![Italian Colour Palette](static/images/colours.jpeg "Italian colour palette")
-![Italian Colour Palette](static/images/colours2.png "Italian colour palette")
+![Colour Palette](static/images/colours3.png "Colour palette")
 
 
 
@@ -99,10 +99,14 @@ For this site, a range of features were used:
 
 Below is listed all of the technologies used to create this site:
 
+* Python
 * HTML
 * CSS
 * JavaScript
     ** Scroll to top button - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+* Flask - as the documentation 
+* Flask WTF Forms - for the form fields and input, also as a shortcut
+* Config - as the python file to support security
 * JQuery
     ** For dropdown and collapsable navbar - https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/
 * Bootstrap - https://getbootstrap.com/
@@ -130,15 +134,21 @@ Below is listed all of the technologies used to create this site:
 * The user is able access all recipes
 
 
-Examples:
+*Examples:*
 * when user clicks 'Click here for more...' button on the small recipe card/snippet, they will be taken to a new page. If they choose to delete they will be asked to confirm. If they ask to edit, they will be taken to a page of the recipe in the form and ready to be updated. If they remove all content from one field, an error will read: 'Please fill in this field'. This is the same when they create a recipe from scratch. 
 
-*For a decription of the different screen sizes, please visit _[here](https://github.com/Vicky185/milestone1-monkees/blob/master/description-screens.md "here")_
+*For a decription of the different screen sizes, please visit _[here]( "here")_
+
+#### Manual Testing
+
+*Examples:*
+
+
 
 # Deployment
 ***
 
-This project was built using [Cloud9](https://ide.c9.io/vls1893/themonkees-site "Cloud 9") and then uploading via Git onto [GitHub](https://github.com/Vicky185/milestone1-monkees "GitHub").
+This project was built using [Gitpod](https://gitpod.io/workspaces/ "Gitpod") and then uploading via Git onto [GitHub](https://github.com/Vicky185/italianrecipe-app "GitHub").
 
 If you want to access the project please log into GitHub and select the 'Milestone Project 1 - The Monkees Website' repository. <enter>
 From there you can access the [HTML code and CSS styling](https://ide.c9.io/vls1893/themonkees-site "HTML code and CSS styling"). <enter>
