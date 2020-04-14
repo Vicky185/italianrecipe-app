@@ -252,6 +252,16 @@ p.create-form-style{
 
 /* -------------------------------------------------------------------page number button styles */
 
+.page-num-active-color {
+    background-color: #6da577;
+    color: #fafafa;
+}
+
+.page-num-active-color:hover {
+    background-color: #fafafa;
+    color: #6da577;
+}
+
 .page-num-color {
     background-color: #801e01;
     color: #fafafa
